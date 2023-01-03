@@ -1,0 +1,196 @@
+/* 
+White: #F8F8F8
+Beige: #EBEBEB
+Gray: #707070
+Blue: #1792D2
+Deep-Blue: #143774
+*/
+
+header,
+div {
+}
+
+/* Typography */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  color: #143774;
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+}
+
+.accent {
+  color: #1792d2;
+}
+
+.accent-light {
+  color: #707070;
+  font-weight: lighter;
+}
+
+/*--------------
+Layout 
+---------------*/
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-sm {
+  width: 26%;
+}
+
+.col-md {
+  width: 45%;
+}
+
+.col-lg {
+  width: 70%;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  color: #143774;
+  padding: 1.125em;
+  border: 1.25em solid #ebebeb;
+}
+
+.card-item {
+  margin: 0.25em 0;
+  padding: 1.35em 0;
+}
+
+.card-item-mid {
+  border-top: #ebebeb solid 0.125em;
+  border-bottom: #ebebeb solid 0.125em;
+}
+
+/* navigation */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  padding: 0.25em;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: #1792d2;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+nav {
+  font-size: 1rem;
+}
+
+.current {
+  border-bottom: 1px solid #707070;
+}
+
+.current:hover {
+  color: #707070;
+}
+
+/* IDK */
+
+.content {
+  padding: 1em 0;
+  margin: 1em 0;
+  display: flex;
+}
+
+.featured-content {
+  border-bottom: 1px solid #1792d2;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .container-nav {
+    flex-direction: column;
+  }
+  .container-col {
+    flex-direction: column;
+  }
+  header {
+    text-align: center;
+  }
+  .col {
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+
+  html {
+    font-size: 32px;
+  }
+}
